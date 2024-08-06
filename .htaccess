@@ -1,2 +1,6 @@
 RewriteEngine On
 RewriteRule ^$ /templates/index.html [L]
+
+Options +Includes
+AddType text/html .html
+AddOutputFilter INCLUDES .html
