@@ -1,15 +1,21 @@
-# from flask import Flask,render_template
-#
-# app = Flask(__name__)
-#
-# @app.route('/')
-# def home():
-#     return 'this is a good day'
-#
-# if __name__ == '__main__':
-#     app.run()
+from flask import Flask, render_template
+from flask_bootstrap import Bootstrap5
 
+# create the app
+app = Flask(__name__)
+bootstrap = Bootstrap5(app)
 
-# main.py
+@app.route('/')
+def home():
+    return render_template('home.html')
 
-print('hello world')
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)

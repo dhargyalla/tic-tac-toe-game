@@ -1,3 +1,0 @@
-flask  # If you're using Flask for a web server
-python-dotenv  # If you're using environment variables
-

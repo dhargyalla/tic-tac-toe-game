@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+ <!-- Title of the page -->
+{% block title %} Projects {% endblock %}
+<!-- header content of the page -->
+{% block header %}
+<h1>Explore my portfolio</h1>
+<span class="subheading"> Data analysis, data science and business intelligence</span>
+{% endblock %}
+
+
+<!-- Main content of the page -->
+{% block content %}
+<section class="py-5 text-center container">
+    <div class="row py-lg-1">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <div class="filter-container">
+          <div class="select-wrapper">
+            <select id="categorySelect" onchange="filterCards(this.value)">
+              <option value="all">Show All</option>
+              <option value="Data Cleaning and Preprocessing">Data Cleaning and Preprocessing</option>
+              <option value="Exploratory Data Analysis">Exploratory Data Analysis (EDA)</option>
+              <option value="Statistical Analysis">Statistical Analysis</option>
+              <option value="Machine Learning Projects">Machine Learning Projects</option>
+              <option value="Data Visualization">Data Visualization</option>
+              <option value="Big Data and Data Engineering">Big Data and Data Engineering</option>
+              <option value="Tools and Technologies">Tools and Technologies</option>
+              <option value="Deployment and Production">Deployment and Production</option>
+              <option value="Domain-Specific Projects">Domain-Specific Projects</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</section>
+
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col" data-category="Data Cleaning and Preprocessing">
+          <div class="card shadow-sm">
+            <img src="../static/assets/img/home-header-bg.jpg" class="bd-placeholder-img card-img-top" alt="Thumbnail" width="100%" height="225">
+            <div class="card-body">
+              <h5 class="card-title">student performance prediction on e-learning platform</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Github</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-category="Exploratory Data Analysis">
+          <div class="card shadow-sm">
+            <img src="../static/assets/img/home-header-bg.jpg" class="bd-placeholder-img card-img-top" alt="Thumbnail" width="100%" height="225">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-category="Statistical Analysis">
+          <div class="card shadow-sm">
+            <img src="../static/assets/img/home-header-bg.jpg" class="bd-placeholder-img card-img-top" alt="Thumbnail" width="100%" height="225">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-category="Machine Learning Projects">
+          <div class="card shadow-sm">
+            <img src="../static/assets/img/home-header-bg.jpg" class="bd-placeholder-img card-img-top" alt="Thumbnail" width="100%" height="225">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-category="Data Visualization">
+          <div class="card shadow-sm">
+            <img src="../static/assets/img/home-header-bg.jpg" class="bd-placeholder-img card-img-top" alt="Thumbnail" width="100%" height="225">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-category="Big Data and Data Engineering">
+          <div class="card shadow-sm">
+            <img src="../static/assets/img/home-header-bg.jpg" class="bd-placeholder-img card-img-top" alt="Thumbnail" width="100%" height="225">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-category="Domain-Specific Projects">
+          <div class="card shadow-sm">
+            <img src="../static/assets/img/home-header-bg.jpg" class="bd-placeholder-img card-img-top" alt="Thumbnail" width="100%" height="225">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-category="Deployment and Production">
+          <div class="card shadow-sm">
+            <img src="../static/assets/img/home-header-bg.jpg" class="bd-placeholder-img card-img-top" alt="Thumbnail" width="100%" height="225">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-category="Tools and Technologies">
+          <div class="card shadow-sm">
+            <img src="../static/assets/img/home-header-bg.jpg" class="bd-placeholder-img card-img-top" alt="Thumbnail" width="100%" height="225">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}
