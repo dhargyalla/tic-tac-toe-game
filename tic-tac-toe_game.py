@@ -23,7 +23,7 @@ def print_board(board):
         print('-' * 5)
 
 
-# Function to check for a winner
+# Function to check for a winner of the game
 def check_winner(board):
     # Check rows, columns, and diagonals
     for i in range(3):
