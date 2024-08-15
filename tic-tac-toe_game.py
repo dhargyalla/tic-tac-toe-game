@@ -93,5 +93,5 @@ def tic_tac_toe_game():
         symbol = 'O' if symbol == 'X' else 'X'
 
 
-# Start the game
+# Start the games
 tic_tac_toe_game()
