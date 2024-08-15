@@ -7,7 +7,7 @@ player = [first_player, second_player]
 
 print(f'*********TIC-TAC-TOE GAME COMPETITION BETWEEN {first_player} Vs {second_player} *******\n')
 
-# Random selection of the player to start the first move
+# Random selection of the player to start the first move and fair play
 starter = random.choice(player)
 other_player = player[1] if starter == player[0] else player[0]
 print(f"Lets see who starts first: {starter}\n")
